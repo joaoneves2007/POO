@@ -5,4 +5,7 @@ class Pessoa {
         this.altura = altura;
         this.peso = peso;
     }
+    falar() {
+        console.log('Olá, meu nome é ${this.nome')
+    }
 }
