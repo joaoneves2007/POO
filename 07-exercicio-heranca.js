@@ -68,4 +68,4 @@ diretor.mostrarDados(); // Saída: Nome: Sérgio, Idade: 45, Altura: 1.65, Peso:
 diretor.mostrarSalario(); // Saída: Salário: 3000
 
 professor.mostrarDados(); // Saída: Nome: Wanderson, Idade: 40, Altura: 1.65, Peso: 70
-professor.mostrarSalario(); // Saída: Salário: 1000
+professor.mostrarSalario(); // Saída: Salário: 1001
