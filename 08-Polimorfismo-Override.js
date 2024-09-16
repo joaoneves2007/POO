@@ -39,3 +39,15 @@ class Mago extends Personagem {
         console.log(`${this.nome} lança o feitiço ${this.feitiço}!`);
     }
 }
+
+// Classe Arqueiro que estende Personagem
+class Arqueiro extends Personagem {
+    constructor(nome, idade, tipoFlecha) {
+        super(nome, idade); // Chama o construtor da classe base
+        this.tipoFlecha = tipoFlecha; // Adiciona o atributo tipoFlecha
+    }
+
+    atacar() {
+        console.log(`${this.nome} dispara uma flecha ${this.tipoFlecha}!`);
+    }
+}
