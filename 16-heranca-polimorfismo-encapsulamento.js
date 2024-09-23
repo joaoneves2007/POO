@@ -1,4 +1,4 @@
-class Persongens {
+class Personagem {
     // Encapsulando os atributos com #, tornando-os privados.
     #nome;
     #classe;
@@ -26,7 +26,7 @@ class Persongens {
     get classe() {
         return this.#classe;
     }
-    set classe() {
+    set classe(classe) {
         this.#classe = classe;
     }
     // Métodos Getter e Setter para o atributo nivel
@@ -91,7 +91,7 @@ class Assassino extends Personagem {
     }
 }
 // Classe derivada - Paladino
-class Assassino extends Personagem {
+class Paladino extends Personagem {
     constructor(nome, nivel, vida, mana, fe) {
         super(nome, "Paladino", nivel, vida, mana);
         this.fe = fe; // Atributo específico
@@ -127,7 +127,7 @@ class Mecanico extends Personagem {
     }
 }
 // Criando instância da classe derivada Assassino 
-const assassino new Assassino("Luna Sonbria", 10, 100, 58, 8);
+const assassino = new Assassino("Luna Sonbria", 10, 100, 58, 8);
 
 // Chamando os métodos 
 assassino.atacar(); // Método sobrescrito 
