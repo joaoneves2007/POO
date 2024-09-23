@@ -53,3 +53,4 @@ class Persongens {
     set mana(mana) {
         this.#mana = mana;
     }
+}
