@@ -126,3 +126,22 @@ class Mecanico extends Personagem {
         console.log(`${this.nome} construiu uma torre defensiva!`);
     }
 }
+// Criando instância da classe derivada Assassino 
+const assassino new Assassino("Luna Sonbria", 10, 100, 58, 8);
+
+// Chamando os métodos 
+assassino.atacar(); // Método sobrescrito 
+assassino.usarFurtividade(); // Método especifico
+
+// Criando instância da classe derivada Palatino
+const paladino = new Paladino("Sir Lancelot", 12, 120, 78, 15);
+// Chamando os métodos
+paladino.defesa(); // Método sobrescrito
+paladino.curar(); // Método especifico
+    
+
+// Criando instância da classe derivada Mecanico
+const mecanico = new Mecanico("Roberto das Engrenagens", 8, 90, 40, 5);
+// Chamando os métodos
+mecanico.receberDano(30); // Método sobrescrito
+mecanico.construirTorre(); // Método especifico
