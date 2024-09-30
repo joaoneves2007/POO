@@ -1,18 +1,18 @@
 // Classe base "Personagem" simulado uma classe abstrata
 class Personagem {
     constructor(nome) {
-        if (this.target === Personagem) {
+        if (new.target === Personagem) {
             throw new Error('Não é possivel instanciar a classe abstrata Personagem diretamente');
         }
         this.nome = nome;    
-}
+    }
 
-// Método abstrato simulado
-atacar() {
-    throw new Error('O método atacar() deve ser implementado pela classe derivada');
-}
+    // Método abstrato simulado
+    atacar() {
+        throw new Error('O método atacar() deve ser implementado pela classe derivada');
+    }
 
-// Método abstrato simulado
+    // Método abstrato simulado
     defender() {
         throw new Error('O método defender() deve ser implementado pela classe derivada');
     }
@@ -51,8 +51,8 @@ class Mago extends Personagem {
 }
 // Criando instância e testando o comportamento
 try {
-    const Personagem = new Personagem("Invalido"); // Isso vai lançar um erro
-}   catch (error) {
+    const personagem = new Personagem("Invalido"); // Isso vai lançar um erro
+} catch (error) {
     console.log(error.message); // "Não é possível instaciar a classe abstrata Personagem diretamente."
 }
 
