@@ -13,12 +13,12 @@ abstract class Personagem {
 }
 // Classe derivada "Guerreiro"
 class Guerreiro extends Personagem {
-    private int forca;
+    private String arma;
 
     // Constructor da classe Guerreiro
-    public Guerreiro(String nome, int forca) {
+    public Guerreiro(String nome, String arma) {
         super(nome);
-        this.forca = arma;
+        this.arma = arma;
     }
 
     // Sobrescrita do método Atacar da classe Abstrata Personagem
